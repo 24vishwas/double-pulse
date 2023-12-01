@@ -448,7 +448,7 @@ section.product{
 }
 
 .productsholder{
-    width: 90%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -476,8 +476,8 @@ section.product{
     display: grid;
     align-items: center;
     justify-items: center;
-    /* width: 40%; */
-    /* margin: 1%; */
+    width: 45%;
+    margin: 1%;
 }
 .productcontentholder a{
     color: #264067;
@@ -491,7 +491,12 @@ section.product{
     transition: .5s ease-in-out;
     
 }
-.productdes{
+.product-heading{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #264067;
+}
+/* .productdes{
     width: 90%;
     background: #D9F1FF;
     display: grid;
@@ -506,7 +511,7 @@ section.product{
     display: block;
     text-align: center;
     font-size: 1rem;
-    /* font-weight: 600; */
+    font-weight: 600;
     color: #264067;
 }
 .additional-details{
@@ -519,7 +524,7 @@ section.product{
 
 .additional-details table td{
     padding: 10px;
-}
+} */
 @media (max-width: 500px){
     .productsholder{
         width: 100%;
@@ -528,9 +533,9 @@ section.product{
     .productcontentholder{
         width: 90%;
     }
-    .productdes ul li{
+    /* .productdes ul li{
         font-size: 0.8rem;
-    }
+    } */
 }
 @media (min-width: 501px) and (max-width: 864px){
     .productsholder{
@@ -543,7 +548,7 @@ section.product{
 }
 @media (min-width: 865px) and (max-width: 1280px){
     .productsholder{
-        width: 100%;
+        width: 80%;
         flex-direction: column;
     }
     .productcontentholder{

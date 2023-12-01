@@ -89,14 +89,14 @@ section.productdesc{
     display: grid;
     align-items: center;
     justify-items: center;
-    margin-bottom: 5%;
+    margin-block: 5%;
 }
 .productdes{
     width: 90%;
     background: #D9F1FF;
     display: grid;
     align-items: center;
-    justify-items: center;
+    justify-items: center ;
 }
 .productdes ul{
     width: 90%;
