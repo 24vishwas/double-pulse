@@ -429,7 +429,7 @@ a{
         justify-items: center;
     }
     .aboutimgholder{
-        width: 90%;
+        /* width: 90%; */
         height: 100%;
     }
     .aboutcard{
@@ -482,7 +482,7 @@ section.product{
 }
 .productcontentholder a{
     color: #264067;
-    font-size: 25px;
+    font-size: 0px;
     font-weight: 500;
     transition: .5s ease-in-out;
 }
