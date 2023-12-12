@@ -122,8 +122,24 @@ section.productdesc{
     border-block: 0.01rem solid white;
 }
 
+
+
 @media (max-width:500px) {
     .productdes ul li{
         font-size: 0.8rem;
+    }
+}
+.image-container{
+    width: 90%;
+    margin-inline: auto;
+    max-width: 600px;
+}
+.image-container img{
+    width: 100%;
+    height: auto;
+}
+@media (max-width:720px) {
+    .sectionheading{
+        font-size: 25px;
     }
 }
