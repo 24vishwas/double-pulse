@@ -674,7 +674,7 @@ section.product{
 }
 @media (max-width:500px) {
     .cover h1{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .why-choose-us .item{
         min-width: unset;
