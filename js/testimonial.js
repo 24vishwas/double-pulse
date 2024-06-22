@@ -1,28 +1,31 @@
-let slideIndex = 0;
-showTestimonial(slideIndex);
 
-function changeTestimonial(n) {
-    showTestimonial((slideIndex += n));
-}
 
-function showTestimonial(n) {
-    const testimonials = document.getElementsByClassName("testimonial");
-    if (n >= testimonials.length) {
-        slideIndex = 0;
-    }
-    if (n < 0) {
-        slideIndex = testimonials.length - 1;
-    }
-    for (let i = 0; i < testimonials.length; i++) {
-        testimonials[i].classList.remove("active");
-    }
-    testimonials[slideIndex].classList.add("active");
-}
+// gallery
+document.addEventListener("DOMContentLoaded", function() {
+    const galleryItems = document.querySelectorAll(".gallery-item");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxContent = document.getElementById("lightbox-content");
+    const caption = document.getElementById("caption");
+    const close = document.getElementById("close");
 
-// Function to automatically advance the slide every 3000ms (3 seconds)
-function autoSlide() {
-    changeTestimonial(1);
-}
+    galleryItems.forEach(item => {
+        item.addEventListener("click", function() {
+            console.log('workin')
+            lightbox.style.display = "block";
+            close.style.display = 'block'
+            lightboxContent.src = this.srcset;
+            caption.textContent = this.alt;
+        });
+    });
 
-// Set the automatic slide interval
-setInterval(autoSlide, 3000); // 3000 milliseconds (3 seconds)
+    close.addEventListener("click", function() {
+        lightbox.style.display = "none";
+    });
+
+    lightbox.addEventListener("click", function(event) {
+        if (event.target !== lightboxContent && event.target !== caption) {
+            lightbox.style.display = "none";
+        }
+    });
+});
+
