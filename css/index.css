@@ -688,6 +688,9 @@ section.product{
   }
   .why-choose-us{
     justify-content: center;
+  }
+  .buttonholder{
+    justify-content: center;
   }   
 }
 @media (max-width:500px) {
